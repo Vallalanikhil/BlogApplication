@@ -1,0 +1,41 @@
+package dao;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import model.Blog;
+
+public class BlogDaoImpl implements BlogDaoInterface{
+
+	private static final String INSERT_BLOG_SQL="INSERT  INTO BLOG(blogId,blogTitle,blogDescription,postedOn)VALUES(seq_blog.nextval,?,?,?)";
+	@Override
+	public void insertBlog(Blog blog) throws SQLException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Blog selectBlog(int blogId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Blog> selectAllBlogs() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean deleteBlog(int blogId) throws SQLException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean updateBlog(Blog blog) throws SQLException, Exception {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}
